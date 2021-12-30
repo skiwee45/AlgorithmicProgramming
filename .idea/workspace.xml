@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Add all java files">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSES_FerrisWheel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PClassicCompetition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PClassicPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_AirConditioning.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_BackAndForth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_DaisyChains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_FencePaint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_LonelyPhotosAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_LonelyPhotosContestSubmission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_StuckInARut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UB_WalkingHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/US_BerryPicking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/US_RectangularPastures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/US_StuckInARut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p1_bitGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p2_paintRoads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p4_smallestCircumcircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p5_antTraveling.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/UB_LonelyPhotosAnalysis.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/UB_LonelyPhotosContestSubmission.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/US_StuckInARut.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="229j8dvROpTWk4PnXZ5uTc0TimA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.UB_LonelyPhotosAnalysis">
+    <configuration name="UB_AirConditioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UB_AirConditioning" />
+      <module name="AlgorithmicProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UB_LonelyPhotosAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UB_LonelyPhotosAnalysis" />
+      <module name="AlgorithmicProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UB_LonelyPhotosContestSubmission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UB_LonelyPhotosContestSubmission" />
+      <module name="AlgorithmicProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UB_WalkingHome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UB_WalkingHome" />
+      <module name="AlgorithmicProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_StuckInARut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="US_StuckInARut" />
+      <module name="AlgorithmicProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UB_LonelyPhotosAnalysis" />
+        <item itemvalue="Application.UB_WalkingHome" />
+        <item itemvalue="Application.UB_AirConditioning" />
+        <item itemvalue="Application.US_StuckInARut" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="" />
+      <created>1639256541054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639256541054</updated>
+      <workItem from="1639256542302" duration="5475000" />
+      <workItem from="1639395970666" duration="605000" />
+      <workItem from="1639453091323" duration="3184000" />
+      <workItem from="1639602166478" duration="3793000" />
+      <workItem from="1639619698232" duration="7757000" />
+      <workItem from="1639851612293" duration="9728000" />
+      <workItem from="1640725306248" duration="3824000" />
+      <workItem from="1640878957374" duration="948000" />
+    </task>
+    <task id="LOCAL-00001" summary="First Competition and Some Practices">
+      <created>1640879602160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640879602160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Place gitignore in right place">
+      <created>1640879700062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640879700062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Competition and Some Practices" />
+    <MESSAGE value="Place gitignore in right place" />
+    <MESSAGE value="Add all java files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all java files" />
+  </component>
+</project>
