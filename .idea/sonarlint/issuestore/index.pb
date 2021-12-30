@@ -5,8 +5,6 @@ F
 src/UB_FencePaint.java,f\8\f8c1b74e0ea75ca4c4098181d06fa416f19ab9f5
 G
 src/UB_DaisyChains.java,0\e\0e1d6d3c9c647eb736644340a940c9a02b6ed5e8
-I
-src/CSES_FerrisWheel.java,3\5\35810df2d9688e251b6aaf804803d48fd52970c0
 C
 src/p1_bitGrid.java,5\3\535b140f09633613d6e30ca5ed4f9a9c1b7c4b78
 F
