@@ -1,0 +1,13 @@
+
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(®ªàÊ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ž´æÙÿÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å
+J
+java:S1128"/Remove this unused import 'java.io.FileReader'.(Â¡¢äþÿÿÿÿ
+K
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ
+k	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãµ¹¸ÿÿÿÿÿ
+V
+java:S2184!"@Cast one of the operands of this addition operation to a "long".(ùßëº

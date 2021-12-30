@@ -1,0 +1,33 @@
+
+H
+src/UB_BackAndForth.java,9\1\91314fe7666064b569dbb3e782e5d07f9ef4beaf
+F
+src/UB_FencePaint.java,f\8\f8c1b74e0ea75ca4c4098181d06fa416f19ab9f5
+G
+src/UB_DaisyChains.java,0\e\0e1d6d3c9c647eb736644340a940c9a02b6ed5e8
+I
+src/CSES_FerrisWheel.java,3\5\35810df2d9688e251b6aaf804803d48fd52970c0
+C
+src/p1_bitGrid.java,5\3\535b140f09633613d6e30ca5ed4f9a9c1b7c4b78
+F
+src/p2_paintRoads.java,9\1\91b3d167144470d25cd5a12fe3d4d365904d7bc6
+P
+ src/p4_smallestCircumcircle.java,c\1\c16cc8b645ea926c003dd1f94192e6ec91751ad3
+H
+src/p5_antTraveling.java,d\0\d09cb22f19772235a7877cf6c7b044c8abb43df5
+L
+src/PClassicCompetition.java,1\8\1863042623195f64bff0313e4f24088a6cdc9a69
+I
+src/PClassicPractice.java,4\0\40dc57056ca66b2f8bbc76fd977b6d5f1f9feffd
+G
+src/US_StuckInARut.java,4\d\4de2c02b673de50085257362dd572c4b0bb69f0f
+K
+src/UB_AirConditioning.java,9\a\9afcc7d75967c4bc7ad1a40c7d3adf3c29bdda00
+G
+src/UB_WalkingHome.java,7\d\7d99662d4ba5aba9f3eb2e50cbaadfd4e23e1bae
+O
+src/US_RectangularPastures.java,c\1\c1c31c0a460fe293dc80ca408d3a557bcf73ad9c
+H
+src/US_BerryPicking.java,0\0\00f431ccdcddd4d3f7e3248b39dd0b47e8bfa75f
+G
+src/UB_StuckInARut.java,d\d\ddfc45a2ddf169b41b0661e6a87e58ba89ef68b6

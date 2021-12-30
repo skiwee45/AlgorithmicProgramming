@@ -1,0 +1,8 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(µÇÒøÿÿÿÿ
+s	java:S135("YReduce the total number of break and continue statements in this loop to use at most one.(úû«üÿÿÿÿÿ
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(“ÊŞ
+_
+java:S2095"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(Ù‚½Ø
+g
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¸€öÏøÿÿÿÿ

@@ -1,0 +1,8 @@
+
+‚
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãšÝÑ
+Q	java:S125"<This block of commented-out lines of code should be removed.(×ðÅˆ
+h
+java:S37767"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(»Ñ·Ê
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ãè ¶úÿÿÿÿ8±¨ÉÚÚ/

@@ -1,0 +1,6 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(Ûœ¥Ñúÿÿÿÿ8’×ÕüÜ/
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(âõ øşÿÿÿÿ
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8”×ÕüÜ/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(´“è‹ıÿÿÿÿ

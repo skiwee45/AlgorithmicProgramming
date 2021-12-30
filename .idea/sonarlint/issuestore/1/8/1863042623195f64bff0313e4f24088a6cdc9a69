@@ -1,0 +1,12 @@
+
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(¯‹ò‡şÿÿÿÿ
+E
+java:S1197H"*Move the array designators [] to the type.(²ì÷âıÿÿÿÿ
+5
+java:S1659I"Declare "t" on a separate line.(÷óşÎ
+A
+java:S1128"+Remove this unused import 'java.sql.Array'.(Õø‹ù
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ

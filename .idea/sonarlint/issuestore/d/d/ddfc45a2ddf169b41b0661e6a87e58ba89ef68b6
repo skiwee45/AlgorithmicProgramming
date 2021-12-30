@@ -1,0 +1,9 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµí‘
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(Ç¼ì–
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(¬„µÁùÿÿÿÿ
+n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ÎÂ²¸
+l	java:S127*"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­‡Ñ*
+b	java:S1017"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(®Ïœ
