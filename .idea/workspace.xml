@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Add all java files">
+    <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Reorganize and add to README.md">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSES_FerrisWheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/CSES_FerrisWheel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PClassicCompetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PClassic_2021Fall/PClassicCompetition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PClassicPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PClassic_2021Fall/PClassicPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_AirConditioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Bronze_2021December/UB_AirConditioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_BackAndForth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/UB_BackAndForth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_DaisyChains.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/UB_DaisyChains.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_FencePaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/UB_FencePaint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_LonelyPhotosAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Bronze_2021December/UB_LonelyPhotosAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_LonelyPhotosContestSubmission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Bronze_2021December/UB_LonelyPhotosContestSubmission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_StuckInARut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/UB_StuckInARut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UB_WalkingHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Bronze_2021December/UB_WalkingHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/US_BerryPicking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/US_BerryPicking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/US_RectangularPastures.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/US_StuckInARut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/USACO_Practice/US_StuckInARut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p1_bitGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ACC_ProblemOfTheWeek/p1_BitGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2_paintRoads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ACC_ProblemOfTheWeek/p2_PaintRoads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p4_smallestCircumcircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ACC_ProblemOfTheWeek/p4_SmallestContainingCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p5_antTraveling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ACC_ProblemOfTheWeek/p5_AntTraveling.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +111,7 @@
       <workItem from="1639851612293" duration="9728000" />
       <workItem from="1640725306248" duration="3824000" />
       <workItem from="1640878957374" duration="1040000" />
-      <workItem from="1640907485262" duration="2049000" />
+      <workItem from="1640907485262" duration="2239000" />
     </task>
     <task id="LOCAL-00001" summary="First Competition and Some Practices">
       <created>1640879602160</created>
@@ -153,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640879937660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reorganize and add to README.md">
+      <created>1640909690088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640909690088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +163,7 @@
     <MESSAGE value="First Competition and Some Practices" />
     <MESSAGE value="Place gitignore in right place" />
     <MESSAGE value="Add all java files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all java files" />
+    <MESSAGE value="Reorganize and add to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganize and add to README.md" />
   </component>
 </project>
