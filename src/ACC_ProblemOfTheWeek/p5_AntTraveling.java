@@ -1,7 +1,9 @@
+package ACC_ProblemOfTheWeek;
+
 import java.util.*;
 import java.io.*;
 
-public class p5_antTraveling {
+public class p5_AntTraveling {
     public static void main(String[] args) {
         MyScanner in = new MyScanner();
         int n = in.nextInt();

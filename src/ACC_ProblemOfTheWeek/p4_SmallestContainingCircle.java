@@ -1,8 +1,9 @@
+package ACC_ProblemOfTheWeek;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class p4_smallestCircumcircle {
+public class p4_SmallestContainingCircle {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

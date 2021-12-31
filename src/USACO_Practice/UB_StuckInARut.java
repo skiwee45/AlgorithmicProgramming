@@ -1,6 +1,9 @@
+package USACO_Practice;
+
 import java.util.*;
 
-public class US_StuckInARut {
+//http://usaco.org/index.php?page=viewproblem2&cpid=1061
+public class UB_StuckInARut {
     public static void main(String[] args) {
         List<int[]> allMap = new ArrayList<>();
         List<int[]> northMap = new ArrayList<>();
@@ -13,17 +16,17 @@ public class US_StuckInARut {
             int y = in.nextInt();
             int[] temp;
             if(isNorth) {
-                temp = new int[] {x, y, 0};
+                temp = new int[] {x, y, Integer.MAX_VALUE};
                 northMap.add(temp);
             } else {
-                temp = new int[] {y, x, 0};
+                temp = new int[] {y, x, Integer.MAX_VALUE};
                 eastMap.add(temp);
             }
             allMap.add(temp);
         }
 
-        northMap.sort(new coordComparator());
-        eastMap.sort(new coordComparator());
+        Collections.sort(northMap, new coordComparator());
+        Collections.sort(eastMap, new coordComparator());
 
         for (int[] cow : northMap){
             int size = eastMap.size();
@@ -34,10 +37,10 @@ public class US_StuckInARut {
                 int time = cow[0] - oCow[1];
                 int reachTime = oCow[0] - cow[1];
                 if(reachTime > time) { //hits
-                    oCow[2] += cow[2] + 1;
+                    cow[2] = Math.min(reachTime, cow[2]);
                     break;
                 } else if (time > reachTime){
-                    cow[2] += oCow[2] + 1;
+                    oCow[2] = Math.min(time, oCow[2]);
                     eastMap.remove(oCow);
                     i--;
                     size--;
@@ -46,9 +49,10 @@ public class US_StuckInARut {
         }
         for(int i = 0; i < allMap.size() - 1; i++) {
             int[] cow = allMap.get(i);
-            System.out.println(cow[2]);
+            String prt = cow[2] == Integer.MAX_VALUE ? "Infinity" : Integer.toString(cow[2]);
+            System.out.println(prt);
         }
-        System.out.print(allMap.get(allMap.size() - 1)[2]);
+        System.out.print(allMap.get(allMap.size() - 1)[2] == Integer.MAX_VALUE ? "Infinity" : Integer.toString(allMap.get(allMap.size() - 1)[2]));
     }
 
     static class coordComparator implements Comparator<int[]> {

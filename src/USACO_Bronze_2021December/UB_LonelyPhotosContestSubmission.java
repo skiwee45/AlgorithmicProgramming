@@ -1,47 +1,43 @@
+package USACO_Bronze_2021December;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class CSES_FerrisWheel {
+//http://www.usaco.org/index.php?page=viewproblem2&cpid=1155
+public class UB_LonelyPhotosContestSubmission {
     public static void main(String[] args) {
         MyScanner in = new MyScanner();
-        int numPeople = in.nextInt();
-        int maxWeight = in.nextInt();
-        int[] people = new int[numPeople];
-        for(int i = 0; i < numPeople; i++) {
-            people[i] = in.nextInt();
+        int n = in.nextInt();
+        String input = in.next();
+        char[] arr = input.toCharArray();
+        int gUnicode = 'G';
+        int[] cows = new int[n]; //true = G, false = H
+        for(int i = 0; i < n; i++) {
+            cows[i] = arr[i] - gUnicode;
         }
 
-        //sort and classify
-        Arrays.sort(people);
-        int current = people[numPeople - 1];
-        int largest = numPeople - 2;
-        int start = people[0];
-        while(largest > 0 && maxWeight - start < current) {
-            current = people[largest];
-            largest--;
-        }
-        largest++;
-
-        int total = numPeople - largest - 1;
-
-        int smallest = 0;
-        while(smallest < largest) {
-            if(maxWeight - people[smallest] >= people[largest]) {
-                smallest++;
+        long lonely = 0;
+        for (int i = 0; i < n - 2; i++) {
+            long countOfCows = 0;
+            long totalCows = 0;
+            for (int j = i; j < n; j++) {
+                totalCows++;
+                countOfCows += cows[j];
+                if(totalCows < 3)
+                    continue;
+                if(totalCows - countOfCows == 1 || totalCows - countOfCows == totalCows - 1) {
+                    lonely++;
+                } else if(totalCows - countOfCows > 1 && countOfCows > 1) {
+                    break;
+                }
             }
-            largest--;
-            total++;
         }
-        if(smallest == largest)
-            total++;
-        System.out.print(total);
+        System.out.print(lonely);
     }
 
-    public static class MyScanner {
+     static class MyScanner {
         BufferedReader br;
         StringTokenizer st;
 

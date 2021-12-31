@@ -1,6 +1,9 @@
+package USACO_Practice;
+
 import java.util.HashSet;
 import java.util.Scanner;
 
+//http://usaco.org/index.php?page=viewproblem2&cpid=1060
 public class UB_DaisyChains {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

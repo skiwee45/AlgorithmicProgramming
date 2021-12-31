@@ -1,7 +1,9 @@
+package USACO_Practice;
 
 import java.io.*;
 import java.util.*;
 
+//http://www.usaco.org/index.php?page=viewproblem2&cpid=857
 public class UB_BackAndForth {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);

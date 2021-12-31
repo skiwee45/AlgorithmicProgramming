@@ -1,6 +1,9 @@
+package USACO_Bronze_2021December;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
+//http://www.usaco.org/index.php?page=viewproblem2&cpid=1156
 public class UB_AirConditioning {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

@@ -1,8 +1,8 @@
-
+package ACC_ProblemOfTheWeek;
 
 import java.util.*;
 
-public class p2_paintRoads {
+public class p2_PaintRoads {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

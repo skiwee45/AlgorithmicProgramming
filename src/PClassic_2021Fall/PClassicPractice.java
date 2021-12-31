@@ -1,10 +1,9 @@
+package PClassic_2021Fall;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+//https://pclassic.org/problems
 public class PClassicPractice {
     public static void main(String[] args) {
         System.out.println(potionBrewing(6, 2));

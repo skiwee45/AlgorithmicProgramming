@@ -1,9 +1,8 @@
+package PClassic_2021Fall;
 
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
+//https://pclassic.org/problems
 public class PClassicCompetition {
     public static void main(String[] args) {
         System.out.println(pandaLand(2, 3, "RDR"));

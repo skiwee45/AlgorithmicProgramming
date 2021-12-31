@@ -1,6 +1,9 @@
+package USACO_Practice;
+
 import java.io.*;
 import java.util.*;
 
+//http://www.usaco.org/index.php?page=viewproblem2&cpid=990
 public class US_BerryPicking {
     public static void main(String[] args) throws IOException {
         BufferedReader r = new BufferedReader(new FileReader("berries.in"));

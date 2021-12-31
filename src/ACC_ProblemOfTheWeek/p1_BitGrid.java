@@ -1,7 +1,8 @@
+package ACC_ProblemOfTheWeek;
 
 import java.util.*;
 
-public class p1_bitGrid {
+public class p1_BitGrid {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int h = in.nextInt();
