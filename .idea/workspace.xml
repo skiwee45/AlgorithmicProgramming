@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Fix README.md">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1639851612293" duration="9728000" />
       <workItem from="1640725306248" duration="3824000" />
       <workItem from="1640878957374" duration="1040000" />
-      <workItem from="1640907485262" duration="2366000" />
+      <workItem from="1640907485262" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="First Competition and Some Practices">
       <created>1640879602160</created>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640909853238</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix README.md">
+      <created>1640909984446</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640909984446</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
