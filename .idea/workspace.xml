@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Reorganize and add to README.md">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6c755bd9-702a-43c5-a15a-fa2e832ddbe8" name="Changes" comment="Fix README.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +109,7 @@
       <workItem from="1639851612293" duration="9728000" />
       <workItem from="1640725306248" duration="3824000" />
       <workItem from="1640878957374" duration="1040000" />
-      <workItem from="1640907485262" duration="2239000" />
+      <workItem from="1640907485262" duration="2366000" />
     </task>
     <task id="LOCAL-00001" summary="First Competition and Some Practices">
       <created>1640879602160</created>
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640909690088</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix README.md">
+      <created>1640909853238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640909853238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +169,7 @@
     <MESSAGE value="Place gitignore in right place" />
     <MESSAGE value="Add all java files" />
     <MESSAGE value="Reorganize and add to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganize and add to README.md" />
+    <MESSAGE value="Fix README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix README.md" />
   </component>
 </project>
