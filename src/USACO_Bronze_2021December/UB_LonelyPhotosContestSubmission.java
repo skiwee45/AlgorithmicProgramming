@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 //http://www.usaco.org/index.php?page=viewproblem2&cpid=1155
+//Version submitted during competition
 public class UB_LonelyPhotosContestSubmission {
     public static void main(String[] args) {
         MyScanner in = new MyScanner();

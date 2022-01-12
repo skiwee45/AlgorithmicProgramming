@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //http://www.usaco.org/index.php?page=viewproblem2&cpid=1155
+//Revised version that passed all test cases, completed after competition
 public class UB_LonelyPhotosAnalysis {
     public static void main(String[] args) {
         MyScanner in = new MyScanner();
