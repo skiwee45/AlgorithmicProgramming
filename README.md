@@ -14,6 +14,7 @@ a Standard division
 ### Competition Results
 [USACO](http://www.usaco.org/index.php):
 * Bronze 2021 December: 970/1000 Promoted to Silver
+* Silver 2022 March (US Open): 1000/1000 Promoted to Gold
 
 [PClassic](https://pclassic.org):
 * Standard 2021 Fall: 18th Place
