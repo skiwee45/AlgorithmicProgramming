@@ -1,4 +1,4 @@
-package LeetCode_DynamicProgramming;
+package LeetCode;
 
 public class HouseRobber_Tabulation {
     public int rob(int[] nums) {

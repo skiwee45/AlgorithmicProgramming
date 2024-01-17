@@ -1,6 +1,4 @@
-package LeetCode_DynamicProgramming;
-
-import java.util.Arrays;
+package LeetCode;
 
 public class MaximalSquare {
     public int maximalSquare(char[][] orig) {

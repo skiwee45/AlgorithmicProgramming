@@ -1,4 +1,4 @@
-package LeetCode_DynamicProgramming;
+package LeetCode;
 
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
