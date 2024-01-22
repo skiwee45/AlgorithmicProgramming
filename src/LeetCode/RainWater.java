@@ -22,26 +22,50 @@ public class RainWater {
 
 
         //go left to right
-        List<Integer> maxIndexes = new ArrayList<>();
+        List<Integer> maxIndexesLeftToRight = new ArrayList<>();
         int max = 0;
         for (int i = 0; i < n; i++) {
             if (height[i] > 0 && height[i] >= max) {
                 max = height[i];
-                maxIndexes.add(i);
+                maxIndexesLeftToRight.add(i);
             }
         }
 
-        System.out.println(maxIndexes);
+        System.out.println(maxIndexesLeftToRight);
 
         //calculate answer
         int water = 0;
-        for (int i = 0; i < maxIndexes.size() - 1; i++) {
-            int leftIndex = maxIndexes.get(i);
-            int rightIndex = maxIndexes.get(i + 1);
+        for (int i = 0; i < maxIndexesLeftToRight.size() - 1; i++) {
+            int leftIndex = maxIndexesLeftToRight.get(i);
+            int rightIndex = maxIndexesLeftToRight.get(i + 1);
             //we know leftHeight is <= to rightHeight, so no need for rightHeight
             int leftHeight = height[leftIndex];
             int blocksInBetween = prefixSum[rightIndex - 1] - prefixSum[leftIndex];
             int areaInBetween = (rightIndex - leftIndex - 1) * leftHeight;
+            int waterInBetween = areaInBetween - blocksInBetween;
+            water += waterInBetween;
+        }
+
+        //go left to right
+        List<Integer> maxIndexesRightToLeft = new ArrayList<>();
+        max = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            if (height[i] > 0 && height[i] > max) {
+                max = height[i];
+                maxIndexesRightToLeft.add(i);
+            }
+        }
+
+        System.out.println(maxIndexesRightToLeft);
+
+        //calculate answer
+        for (int i = 0; i < maxIndexesRightToLeft.size() - 1; i++) {
+            int rightIndex = maxIndexesRightToLeft.get(i);
+            int leftIndex = maxIndexesRightToLeft.get(i + 1);
+            //we know leftHeight is <= to rightHeight, so no need for rightHeight
+            int rightHeight = height[rightIndex];
+            int blocksInBetween = prefixSum[rightIndex - 1] - prefixSum[leftIndex];
+            int areaInBetween = (rightIndex - leftIndex - 1) * rightHeight;
             int waterInBetween = areaInBetween - blocksInBetween;
             water += waterInBetween;
         }
