@@ -34,6 +34,11 @@ public class RainWater {
         System.out.println(maxIndexes);
 
         //calculate answer
+
+        return getWater(height, maxIndexes, prefixSum);
+    }
+
+    private static int getWater(int[] height, List<Integer> maxIndexes, int[] prefixSum) {
         int water = 0;
         for (int i = 0; i < maxIndexes.size() - 1; i++) {
             int leftIndex = maxIndexes.get(i);
@@ -45,7 +50,6 @@ public class RainWater {
             int waterInBetween = areaInBetween - blocksInBetween;
             water += waterInBetween;
         }
-
         return water;
     }
 }
