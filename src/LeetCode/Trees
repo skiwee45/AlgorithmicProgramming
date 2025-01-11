@@ -1,0 +1,208 @@
+#include <algorithm>
+#include <vector>
+#include <deque>
+#include <memory>
+#include <unordered_map>
+using namespace std;
+
+struct TreeNode
+{
+  int val;
+  TreeNode *left;
+  TreeNode *right;
+  TreeNode() : val(0), left(nullptr), right(nullptr) {}
+  TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+int height(TreeNode *root)
+{
+  if (root == nullptr)
+    return 0;
+
+  int leftHeight = height(root->left);
+  int rightHeight = height(root->right);
+
+  if (leftHeight == -1 || rightHeight == -1)
+    return -1;
+
+  if (abs(leftHeight - rightHeight) >= 2)
+    return -1;
+
+  return max(leftHeight, rightHeight) + 1;
+}
+
+bool isBalanced(TreeNode *root)
+{
+  if (root == nullptr)
+    return true;
+
+  int leftHeight = height(root->left);
+  int rightHeight = height(root->right);
+  if (leftHeight == -1 || rightHeight == -1)
+    return false;
+  return abs(height(root->left) - height(root->right)) < 2;
+}
+
+vector<int> rightSideView(TreeNode *root)
+{
+  // level order traversal
+  unique_ptr<deque<TreeNode *>> queue = make_unique<deque<TreeNode *>>();
+  vector<int> rightSide;
+  if (root == nullptr)
+    return rightSide;
+  queue->push_back(root);
+
+  while (queue != nullptr)
+  {
+    auto newLevelQueue = make_unique<deque<TreeNode *>>();
+    while (queue->size() > 1)
+    {
+      auto node = queue->front();
+      queue->pop_front();
+      if (node->left != nullptr)
+        newLevelQueue->push_back(node->left);
+      if (node->right != nullptr)
+        newLevelQueue->push_back(node->right);
+    }
+
+    auto node = queue->front();
+    queue->pop_front();
+    if (node->left != nullptr)
+      newLevelQueue->push_back(node->left);
+    if (node->right != nullptr)
+      newLevelQueue->push_back(node->right);
+    rightSide.push_back(node->val);
+
+    if (newLevelQueue->empty())
+      break;
+
+    queue = move(newLevelQueue);
+  }
+
+  return rightSide;
+}
+
+int widthOfBinaryTree(TreeNode *root)
+{
+  int bestWidth = 0;
+  deque<pair<TreeNode *, long long>> queue;
+  if (root == nullptr)
+    return bestWidth;
+  queue.push_back({root, 0});
+
+  while (queue.size() > 0)
+  {
+    int levelSize = queue.size();
+    int width = queue.back().second - queue.front().second + 1;
+    bestWidth = max(bestWidth, width);
+
+    for (int i = 0; i < levelSize; i++)
+    {
+      auto [node, index] = queue.front();
+      queue.pop_front();
+      if (node->left != nullptr)
+        queue.push_back({node->left, index * 2 + 1});
+      if (node->right != nullptr)
+        queue.push_back({node->right, index * 2 + 2});
+    }
+  }
+
+  return bestWidth;
+}
+
+bool isValidRecur(TreeNode *root, long long minBound, long long maxBound)
+{
+  if (root == nullptr)
+    return true;
+  if (root->val <= minBound || root->val >= maxBound)
+    return false;
+
+  bool leftValid = isValidRecur(root->left, minBound, root->val);
+  bool rightValid = isValidRecur(root->right, root->val, maxBound);
+  return leftValid && rightValid;
+}
+
+bool isValidBST(TreeNode *root)
+{
+  return isValidRecur(root, INT_MIN - 1LL, INT_MAX + 1LL);
+}
+
+pair<TreeNode *, bool> lcaRecur(TreeNode *root, TreeNode *p, TreeNode *q)
+{
+  if (root == nullptr)
+    return {nullptr, false};
+  bool isPQ = root == p || root == q;
+  auto [leftLca, leftHasPQ] = lcaRecur(root->left, p, q);
+  auto [rightLca, rightHasPQ] = lcaRecur(root->right, p, q);
+  if (leftLca != nullptr)
+    return {leftLca, true};
+  if (rightLca != nullptr)
+    return {rightLca, true};
+
+  if (isPQ + leftHasPQ + rightHasPQ == 2)
+    return {root, true};
+
+  return {nullptr, isPQ || leftHasPQ || rightHasPQ};
+}
+
+TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q)
+{
+  return lcaRecur(root, p, q).first;
+}
+
+TreeNode *buildTreeRecur(vector<int> &preorder, int &preIndex, unordered_map<int, int> &valToInorder, int minIndex, int maxIndex)
+{
+  if (preIndex + 1 >= preorder.size())
+    return nullptr;
+
+  int rootVal = preorder[preIndex + 1];
+  if (valToInorder[rootVal] <= minIndex || valToInorder[rootVal] >= maxIndex)
+    return nullptr;
+
+  TreeNode *root = new TreeNode(rootVal);
+  preIndex++;
+
+  // try left first
+  root->left = buildTreeRecur(preorder, preIndex, valToInorder, minIndex, valToInorder[rootVal]);
+
+  // now preIndex is on whatever was last built on the left side
+  // go build right side
+  root->right = buildTreeRecur(preorder, preIndex, valToInorder, valToInorder[rootVal], maxIndex);
+
+  return root;
+}
+
+TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder)
+{
+  // build a reverse hash
+  // the idea is, use the inorder as a sorting key essentially, and build a BST from there
+  unordered_map<int, int> valToInorderIndex;
+  for (int i = 0; i < inorder.size(); i++)
+  {
+    valToInorderIndex[inorder[i]] = i;
+  }
+
+  int starterPreIndex = -1;
+  return buildTreeRecur(preorder, starterPreIndex, valToInorderIndex, INT_MIN, INT_MAX);
+}
+
+// first is best path with or without root, second is best one-branch with root
+pair<int, int> maxPathRecur(TreeNode *root)
+{
+  if (root == nullptr)
+    return {INT_MIN, 0};
+
+  auto [leftBestPath, leftBestBranch] = maxPathRecur(root->left);
+  auto [rightBestPath, rightBestBranch] = maxPathRecur(root->right);
+  leftBestBranch = max(0, leftBestBranch);
+  rightBestBranch = max(0, rightBestBranch);
+  int bestPath = root->val + leftBestBranch + rightBestBranch;
+  int bestBranch = root->val + max(leftBestBranch, rightBestBranch);
+  return {max({leftBestPath, rightBestPath, bestPath}), bestBranch};
+}
+
+int maxPathSum(TreeNode *root)
+{
+  return maxPathRecur(root).first;
+}

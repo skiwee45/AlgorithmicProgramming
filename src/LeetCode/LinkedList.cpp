@@ -139,6 +139,60 @@ Node *findIntersection(Node *h1, Node *h2)
   return nullptr;
 }
 
+bool detectCycle(Node *head)
+{
+  // init fast and slow pointers
+  Node *slow, *fast;
+  slow = fast = head;
+
+  while (fast != nullptr)
+  {
+    fast = fast->next;
+    if (fast == nullptr)
+      return false;
+
+    fast = fast->next;
+    slow = slow->next;
+
+    if (fast == slow)
+      return true;
+  }
+
+  return false;
+}
+
+int calcNextNum(int n)
+{
+  int next = 0;
+  while (n > 0)
+  {
+    int digit = n % 10;
+    next += digit * digit;
+    n /= 10;
+  }
+
+  return next;
+}
+
+bool isHappyNumber(int n)
+{
+  // essentially look for a loop
+  int slow = n;
+  int fast = n;
+
+  while (fast != 1)
+  {
+    fast = calcNextNum(calcNextNum(fast)); // don't need to check in the middle, cuz 1^2 = 1
+    slow = calcNextNum(slow);
+    if (fast != 1 && fast == slow)
+    {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 int main(int argc, char const *argv[])
 {
   Node *head = nullptr;
@@ -167,4 +221,7 @@ int main(int argc, char const *argv[])
   printList(otherList);
   auto intersection = findIntersection(head, otherList);
   printList(intersection);
+
+  // intersection->next = otherList;
+  cout << detectCycle(otherList) << endl;
 }

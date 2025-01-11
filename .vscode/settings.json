@@ -7,6 +7,18 @@
     "xutility": "cpp",
     "iostream": "cpp",
     "string": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "unordered_set": "cpp",
+    "xhash": "cpp",
+    "cmath": "cpp",
+    "set": "cpp",
+    "trees": "cpp",
+    "format": "cpp",
+    "ranges": "cpp",
+    "xtree": "cpp",
+    "cstdlib": "cpp",
+    "deque": "cpp",
+    "memory": "cpp",
+    "array": "cpp"
   }
 }
